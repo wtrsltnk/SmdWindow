@@ -5,6 +5,7 @@ project(SmdWindow)
 find_package(OpenGL REQUIRED)
 
 add_executable(SmdWindow
+    README.md
     source/CCommonDialogs.cpp
     source/CCommonDialogs.h
     source/CControl.cpp
