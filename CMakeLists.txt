@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.1)
 
-project(GlWindow)
+project(SmdWindow)
 
 find_package(OpenGL REQUIRED)
 
-add_executable(GlWindow
+add_executable(SmdWindow
     source/CCommonDialogs.cpp
     source/CCommonDialogs.h
     source/CControl.cpp
@@ -25,11 +25,11 @@ add_executable(GlWindow
     resource/resource.h
 	)
 
-target_link_libraries(GlWindow
+target_link_libraries(SmdWindow
     ${OPENGL_LIBRARIES}
     )
 
-target_compile_features(GlWindow
+target_compile_features(SmdWindow
 	PRIVATE cxx_auto_type
 	PRIVATE cxx_nullptr
 	PRIVATE cxx_range_for
